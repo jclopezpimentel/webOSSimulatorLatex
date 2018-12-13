@@ -25,7 +25,12 @@
 %%
 %%
 \documentclass[preprint,12pt,3p]{elsarticle}
+%\usepackage{graphicx, soul} 
 \usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{colortbl} % Biblioteca para el color
+\usepackage{color} % Biblioteca para el color
+\usepackage{xcolor} % Biblioteca para el color
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
 
@@ -76,7 +81,7 @@
 %% \biboptions{comma,round}
 
 % \biboptions{}
-
+\newcommand{\Caro}[1]{\textcolor{magenta}{\textit{#1}}}
 
 \journal{Computers \& Education}
 
@@ -84,10 +89,11 @@
 
 \tableofcontents
 \newcommand{\pathpractices}{https://github.com/jclopezpimentel/webOSSimulatorLatex/activities/}
+\newcommand{\pathexams}{https://github.com/jclopezpimentel/webOSSimulatorLatex/exams/}
 
 \begin{frontmatter}
         \input{sections/header.tex}
-%        \input{sections/abstract.tex}
+        \input{sections/abstract.tex}
 \end{frontmatter}
 
 %%
